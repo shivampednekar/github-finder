@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>GitHub Finder</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navWrapper">
+      <div class="wrapper">
+        <a href="#" class="logo">GitHub Finder</a>
+      </div>
+    </nav>
+
+    <!-- Search & Result container-->
+    <header>
+      <div class="wrapper searchContainer">
+        <div class="search">
+          <h1>Search GitHub Users</h1>
+          <p>Enter a username to fetch a user profile and repos</p>
+          <div class="inputWrapper">
+            <input
+              type="text"
+              id="GitHub Username"
+              class="userSearch"
+              required
+            />
+            <label for="GitHub Username">GitHub Username</label>
+          </div>
+        </div>
+
+        <!-- Generated username container -->
+        <div id="profile"></div>
+      </div>
+    </header>
+    <footer class="footer">
+      GitHub Finder &copy;
+    </footer>
+
+    <!-- SCRIPT SECTION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/github.js"></script>
+  </body>
+</html>
